@@ -1,1 +1,92 @@
+* {
+    box-sizing: border-box;
+}
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 108px;
+    padding: 25px 16px;
+    color: #1ebfc1;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 0.6rem;
+    border: 1px solid #1ebfc1;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+.header .body {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between; /* Căn đều các phần logo, links và buttons */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding-left: 235px; /* Khoảng cách padding theo chiều ngang */
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center; /* Căn giữa các mục */
+    gap: -1px; /* Khoảng cách giữa các mục */
+}
+
+.nav a {
+    padding: 8px 20px;
+    color: #2f3a3b;
+    font-size: 1.6rem;
+}
+
+.nav a:hover,
+.nav li.active a {
+    text-shadow: 1px 0 0 currentColor;
+    color: #2f3a3b;
+}
+
+/* Action Button */
+.active-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 177px;
+}
+
+.active-btn .action-link {
+    white-space: nowrap;
+    color: #494949;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.active-btn .action-link:hover {
+    text-shadow: 1px 0 0 currentColor; /*them active vao cac muc*/
+    color: #2f3a3b;
+}
+
+.active-btn .action-btn {
+    padding: 17px 16px;
+    margin-left: 24px;
+}
